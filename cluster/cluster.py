@@ -22,7 +22,7 @@ from torch.utils.data import DataLoader
 import models
 import gc
 
-N = 500
+N = 200
 
 attrs = [(0x8, 0x103e),
 (0x8, 0x1140),
