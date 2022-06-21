@@ -1,0 +1,1 @@
+.\gui\Scripts\python.exe main.py

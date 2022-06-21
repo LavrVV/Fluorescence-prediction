@@ -1,7 +1,7 @@
 import pyforms
 from   pyforms.basewidget          import BaseWidget
 # from   pyforms.controls import ControlText
-# from   pyforms.controls import ControlButton
+from   pyforms.controls import ControlEmptyWidget
 from   pyforms.controls import ControlFile
 from   pyforms.controls import ControlLabel
 import pydicom
@@ -12,6 +12,7 @@ import pandas as pd
 import pickle
 
 from scipy.special import expit
+
 
 class Encoder:
     def __init__(self, model):
@@ -46,6 +47,11 @@ class Encoder:
         
         return z
 
+class Error(BaseWidget):
+    def __init__(self):
+        super(Error, self).__init__('Ошибка')
+        self._error_text = ControlLabel()
+
 class FluorescencePredictor(BaseWidget):
 
     def __init__(self):
@@ -54,30 +60,40 @@ class FluorescencePredictor(BaseWidget):
         #Definition of the forms fields
         self._answer = ControlLabel('Ответ')
         self._load = ControlFile(label='Загрузить снимок')
+        self._error = ControlEmptyWidget()
         
+        self.curr_file = ''
+
         self._load.changed_event = self._fileOpen
     def _extractData(self):
         with zipfile.ZipFile(self._load.value, 'r') as MRIs:
             data = []
-            other = []
             sh = 64
             count = 0
+            sex = -1
+            age = -1
+            weight = -1
+
             for fName in MRIs.namelist():
                 if fName[-4:] == '.dcm':
                     with MRIs.open(fName) as fileDCM:
                         ds = pydicom.read_file(fileDCM)
-
-                        t = ds[(0x8, 0x103e)].value
+                        try:
+                            t = ds[(0x8, 0x103e)].value
+                        except:
+                            continue
 
                         if not ('T1' in t or 'T2' in t or 't1' in t or 't2' in t):
                             continue
-
-                        sex = ds[(0x10, 0x40)].value
-                        sex = 1 if sex == 'M' else 0
-                        age = ds[(0x10, 0x1010)].value
-                        age = int(age[:-1])
-                        weight = ds[(0x10, 0x1030)].value
-                        weight = float(weight)
+                        try:
+                            sex = ds[(0x10, 0x40)].value
+                            sex = 1 if sex == 'M' else 0
+                            age = ds[(0x10, 0x1010)].value
+                            age = int(age[:-1])
+                            weight = ds[(0x10, 0x1030)].value
+                            weight = float(weight)
+                        except:
+                            pass
 
                         ds = ds.pixel_array
 
@@ -85,7 +101,6 @@ class FluorescencePredictor(BaseWidget):
                             count += 1
                             continue
 
-                        other.append([sex, age, weight])
 
                         if ds.shape[0] != sh:
                         
@@ -100,9 +115,19 @@ class FluorescencePredictor(BaseWidget):
 
                         data.append(curr)
             data = np.array(data, dtype=float)
-            other = np.array(other)
-            other = pd.DataFrame(other)
+            
+        if len(data) == 0:
+            raise Exception('В архиве не найдены снимки МРТ формата dicom.')
+        other = []
+        for i in range(len(data)):
+            other.append([sex, age, weight])
 
+        other = np.array(other)
+        other = pd.DataFrame(other)
+        
+        if sex == -1 or age == -1 or weight == -1:
+            raise ValueError('В снимках не обнаружены аттрибуты пол возраст или вес.')
+        
         return data, other
     def _predict(self, data, other):
         with open('encoder.pickle', 'rb') as f:
@@ -117,12 +142,27 @@ class FluorescencePredictor(BaseWidget):
         ddata = pd.concat([encoded, other], axis=1)
         res = predictor.predict(ddata)
         return res
+    def _raise_error(self, text):
+        err = Error()
+        err._error_text.value = text
+        err.parent = self
+        err.show()
 
     def _fileOpen(self):
-        if self._load.value == '':
-            pass
+        if self.curr_file == self._load.value:
+            return True
+        self.curr_file = self._load.value
+        if len(self._load.value) < 4:
+            self._raise_error('Не верный формат файла. Должен быть архив формата zip со снимками.')
         elif self._load.value[-4:] == '.zip':
-            data, other = self._extractData()
+            try:
+                data, other = self._extractData()
+            except ValueError as e:
+                self._raise_error(str(e))
+                return True
+            except Exception as e:
+                self._raise_error(str(e))
+                return True
             res = self._predict(data, other)
             if np.mean(res) > 0.5:
                 self._answer.value = 'будет светиться'
@@ -130,8 +170,8 @@ class FluorescencePredictor(BaseWidget):
                 self._answer.value = 'не будет светиться'    
             
         else:
-            pass
-        
+            self._raise_error('Не верный формат файла. Должен быть архив формата zip со снимками.')
+            #self._error.value = err
 
 
         return True
@@ -139,3 +179,4 @@ class FluorescencePredictor(BaseWidget):
 #Execute the application
 if __name__ == "__main__":   
     pyforms.start_app( FluorescencePredictor )
+    #pyforms.start_app( Error )

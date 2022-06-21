@@ -49,5 +49,7 @@ Temporary Items
 /mrt/*
 *.pickle
 cluster/*.pickle
-*.pickle
-*.pickle
+.vscode
+.ipnyb_checkpoints
+*.zip
+gui/gui
