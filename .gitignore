@@ -45,11 +45,15 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
 # Myrules
-/mrt/*
-*.pickle
-cluster/*.pickle
 .vscode
-.ipnyb_checkpoints
+.ipynb_checkpoints
+app/dist
+app/build
+app/.venv
+
+/mrt/*
+#*.pickle
+cluster/*.pickle
 *.zip
-gui/gui
