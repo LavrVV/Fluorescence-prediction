@@ -1,0 +1,139 @@
+Аласенс
+
+
+Применение автокодирующих нейронных сетей для предсказания флуоресценции глиом головного мозга по данным магнитно-резонансной томографии
+
+4-по каким данным
+5-улучшить признаки
+6-графики
+8-определения как варианет по слайду на каждый тип
+про обучение.
+
+attrs_user = [(0x10, 0x40),#sex
+              (0x10, 0x1010),#age
+              (0x10, 0x1030),#weight
+              (0x18, 0x25),#angio flag NO
+              (0x18, 0x85),]# Imaged Nucleus NO
+
+!!Adam: A Method for Stochastic Optimization
+https://arxiv.org/abs/1412.6980
+
+!!Лекции по методу опорных векторов
+http://www.ccas.ru/voron/download/SVM.pdf
+
+!!Unsupervised Detection of Lesions in Brain MRI using constrained adversarial auto-encoders
+https://arxiv.org/pdf/1806.04972.pdf
+
+!!Autoencoder in Time-Series Analysis for Unsupervised Tissues Characterisation in a Large Unlabelled Medical Image Dataset
+https://www.computer.org/csdl/proceedings-article/icmla/2011/4607a259/12OmNyS6RE5
+
+!!Multi-modal Brain Tumor Segmentation Using Stacked Denoising Autoencoders
+https://link.springer.com/chapter/10.1007/978-3-319-30858-6_16
+
+!!Real-time Dynamic MRI Reconstruction using Stacked Denoising Autoencoder
+https://arxiv.org/abs/1503.06383
+
+!!Multimodal learning using convolution neural network and Sparse Autoencoder
+https://ieeexplore.ieee.org/abstract/document/7881683
+
+!!k-Sparse Autoencoders
+https://arxiv.org/pdf/1312.5663.pdf
+
+!!DEEP LEARNING: SPARSE AUTOENCODERS !не статья!
+http://www.ericlwilkinson.com/blog/2014/11/19/deep-learning-sparse-autoencoders
+
+!!Auto-encoder based dimensionality reduction
+https://www.sciencedirect.com/science/article/pii/S0925231215017671
+
+!!Logistic Regression
+https://link.springer.com/book/10.1007%2F978-1-4419-1742-3
+
+!!Induction of decision trees
+https://link.springer.com/article/10.1007/BF00116251
+
+!!Semi-naive bayesian classifier
+https://link.springer.com/chapter/10.1007/BFb0017015
+
+!!Theory of the Backpropagation Neural Network
+https://www.sciencedirect.com/science/article/pii/B9780127412528500108
+
+!!pytorch
+https://pytorch.org/docs/stable/index.html
+
+!!pydicom
+https://pydicom.github.io/
+
+
+Большие данные: инфраструктуры и методы решения задач
+
+my code
+https://github.com/LavrVV/Fluorescence-prediction
+
+Chuang K. H. et al. Model-free functional MRI analysis using Kohonen clustering neural network and fuzzy C-means //IEEE transactions on medical imaging. – 1999. – Т. 18. – №. 12. – С. 1117-1128.
+
+Jiang J., Trundle P., Ren J. Medical image analysis with artificial neural networks //Computerized Medical Imaging and Graphics. – 2010. – Т. 34. – №. 8. – С. 617-631.
+
+Wismüller A. et al. A neural network approach to functional MRI pattern analysis—clustering of time-series by hierarchical vector quantization //International Conference on Artificial Neural Networks. – Springer, London, 1998. – С. 857-862.
+
+Pereira S. et al. Brain tumor segmentation using convolutional neural networks in MRI images //IEEE transactions on medical imaging. – 2016. – Т. 35. – №. 5. – С. 1240-1251.
+
+
+
+Chen X., Konukoglu E. Unsupervised Detection of Lesions in Brain MRI using constrained adversarial auto-encoders //arXiv preprint arXiv:1806.04972. – 2018.
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+Kleinbaum D. G. et al. Logistic regression. – New York : Springer-Verlag, 2002.
+
+Воронцов К. В. Лекции по методу опорных векторов (http://www.ccas.ru/voron/download/SVM.pdf).
+
+Kononenko I. Semi-naive Bayesian classifier //European Working Session on Learning. – Springer, Berlin, Heidelberg, 1991. – С. 206-219.
+
+Quinlan J. R. Induction of decision trees //Machine learning. – 1986. – Т. 1. – №. 1. – С. 81-106.
+
+Alom M. Z. et al. The history began from AlexNet: a comprehensive survey on deep learning approaches //arXiv preprint arXiv:1803.01164. – 2018.
+
+Liu J. et al. Applications of deep learning to MRI images: A survey //Big Data Mining and Analytics. – 2018. – Т. 1. – №. 1. – С. 1-18.
+
+Sarraf S. et al. DeepAD: Alzheimer′ s disease classification via deep convolutional neural networks using MRI and fMRI //BioRxiv. – 2016. – С. 070441.
+
+Wu Z. et al. A gpu implementation of googlenet //Tech. Rep., Technical report. – 2014. – С. 6.
+
+Pereira S. et al. Brain tumor segmentation using convolutional neural networks in MRI images //IEEE transactions on medical imaging. – 2016. – Т. 35. – №. 5. – С. 1240-1251.
+
+Dice L. R. Measures of the amount of ecologic association between species //Ecology. – 1945. – Т. 26. – №. 3. – С. 297-302.
+
+Vu T. D. et al. Multimodal learning using convolution neural network and Sparse Autoencoder //2017 IEEE International Conference on Big Data and Smart Computing (BigComp). – IEEE, 2017. – С. 309-312.
+
+Shaker M. S. et al. Cardiac MRI view classification using autoencoder //2014 Cairo International Biomedical Engineering Conference (CIBEC). – IEEE, 2014. – С. 125-128.
+
+Chen X., Konukoglu E. Unsupervised Detection of Lesions in Brain MRI using constrained adversarial auto-encoders //arXiv preprint arXiv:1806.04972. – 2018.
+
+Majumdar A. Real-time dynamic MRI reconstruction using stacked denoising autoencoder //arXiv preprint arXiv:1503.06383. – 2015.
+
+Zhang Y. D. et al. Sparse autoencoder based deep neural network for voxelwise detection of cerebral microbleed //2016 IEEE 22nd International Conference on Parallel and Distributed Systems (ICPADS). – IEEE, 2016. – С. 1229-1232.
+
+Wang Y., Yao H., Zhao S. Auto-encoder based dimensionality reduction //Neurocomputing. – 2016. – Т. 184. – С. 232-242.
+
+Hecht-Nielsen R. Theory of the backpropagation neural network //Neural networks for perception. – Academic Press, 1992. – С. 65-93.
+
+Makhzani A., Frey B. K-sparse autoencoders //arXiv preprint arXiv:1312.5663. – 2013.
+
+DEEP LEARNING: SPARSE AUTOENCODERS. URL: http://www.ericlwilkinson.com/blog/2014/11/19/deep-learning-sparse-autoencoders.
+
+Pytorch documentation. URL: https://pytorch.org/docs/stable/index.html.
+
+Github. URL: https://github.com/LavrVV/Fluorescence-prediction
+
+Mukaka M. M. A guide to appropriate use of correlation coefficient in medical research //Malawi Medical Journal. – 2012. – Т. 24. – №. 3. – С. 69-71.
+
+Pydicom documentation. URL: https://pydicom.github.io/.
+
+PIL documentation. URL: https://pillow.readthedocs.io/en/5.2.x/
+
+Kingma D. P., Ba J. Adam: A method for stochastic optimization //arXiv preprint arXiv:1412.6980. – 2014.
+
+Pyforms documentation. URL: https://pyforms.readthedocs.io/en/v3.0/getting-started/style-layout/

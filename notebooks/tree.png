@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Возраст <= 50.0\n100.0%\n[0.0, 1.0]\nсветится", fillcolor="#399de5c7"] ;
+1 [label="Grade <= 4.0\n47.6%\n[0.0, 1.0]\nсветится", fillcolor="#399de58a"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Возраст <= 24.0\n25.0%\n[0.0, 1.0]\nсветится", fillcolor="#399de50e"] ;
+1 -> 2 ;
+3 [label="2.8%\n[0.0, 1.0]\nсветится", fillcolor="#399de5ff"] ;
+2 -> 3 ;
+4 [label="22.2%\n[1.0, 0.0]\nне светится", fillcolor="#e581392c"] ;
+2 -> 4 ;
+5 [label="Сторона <= -0.0\n22.6%\n[0.0, 1.0]\nсветится", fillcolor="#399de5db"] ;
+1 -> 5 ;
+6 [label="10.1%\n[0.0, 1.0]\nсветится", fillcolor="#399de5ca"] ;
+5 -> 6 ;
+7 [label="12.5%\n[0.0, 1.0]\nсветится", fillcolor="#399de5e8"] ;
+5 -> 7 ;
+8 [label="Grade <= 2.0\n52.4%\n[0.0, 1.0]\nсветится", fillcolor="#399de5ef"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Сторона <= 0.0\n3.1%\n[0.0, 1.0]\nсветится", fillcolor="#399de533"] ;
+8 -> 9 ;
+10 [label="1.7%\n[0.0, 1.0]\nсветится", fillcolor="#399de5ff"] ;
+9 -> 10 ;
+11 [label="1.4%\n[1.0, 0.0]\nне светится", fillcolor="#e58139ff"] ;
+9 -> 11 ;
+12 [label="ИК До операции <= 55.0\n49.3%\n[0.0, 1.0]\nсветится", fillcolor="#399de5f6"] ;
+8 -> 12 ;
+13 [label="6.2%\n[0.0, 1.0]\nсветится", fillcolor="#399de5ff"] ;
+12 -> 13 ;
+14 [label="43.1%\n[0.0, 1.0]\nсветится", fillcolor="#399de5f4"] ;
+12 -> 14 ;
+}

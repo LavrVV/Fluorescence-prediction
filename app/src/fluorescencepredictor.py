@@ -138,7 +138,6 @@ class FluorescencePredictor(QMainWindow):
 
 
                         if ds.shape[0] != sh:
-                        
                             gg = Image.fromarray(ds)
                             gg = gg.resize((sh, sh))
                             curr = np.asarray(gg)

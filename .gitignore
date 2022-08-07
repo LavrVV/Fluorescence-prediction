@@ -54,6 +54,4 @@ app/build
 app/.venv
 
 /mrt/*
-#*.pickle
-cluster/*.pickle
 *.zip

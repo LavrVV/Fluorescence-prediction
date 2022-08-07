@@ -1,0 +1,108 @@
+********************
+<class '__main__.MyAutoencoder64'>10
+(Train/Test) MSE: 0.009/0.009	Accuracy: 10885.715/10822.426
+{'LogisticRegression': 0.9347364994687926, 'DecisionTree': 0.9981192223978494, 'GaussianNB': 0.8813056369157524, 'SVC': 1.0, 'SGD': 0.9034260418115647, 'GaussianProcess': 0.9999370673379484, 'XGBoost': 0}
+********************
+<class '__main__.MySparceAutoencoder64'>10
+(Train/Test) MSE: 0.011/0.011	Accuracy: 11994.872/11767.081
+{'LogisticRegression': 0.9358621745778384, 'DecisionTree': 0.9982304543777787, 'GaussianNB': 0.8225334938197749, 'SVC': 0.9902452900452635, 'SGD': 0.8740558160561154, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MyDeepAutoencoder64'>10
+(Train/Test) MSE: 0.029/0.030	Accuracy: 23811.740/25071.557
+{'LogisticRegression': 0.9356416602524019, 'DecisionTree': 1.0, 'GaussianNB': 0.9038657661172993, 'SVC': 1.0, 'SGD': 0.9223802458856147, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MyDeepSparceAutoencoder64'>10
+(Train/Test) MSE: 0.017/0.018	Accuracy: 15725.206/15818.104
+{'LogisticRegression': 0.9356416602524019, 'DecisionTree': 1.0, 'GaussianNB': 0.6422720248982492, 'SVC': 0.9902457370977071, 'SGD': 0.889292641453822, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MyAutoencoder64'>11
+(Train/Test) MSE: 0.009/0.009	Accuracy: 10809.850/10683.635
+{'LogisticRegression': 0.9361354797295549, 'DecisionTree': 0.9990052801282404, 'GaussianNB': 0.8743307972072601, 'SVC': 1.0, 'SGD': 0.9069351762281682, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MySparceAutoencoder64'>11
+(Train/Test) MSE: 0.011/0.011	Accuracy: 12045.636/11861.428
+{'LogisticRegression': 0.9355161613142089, 'DecisionTree': 0.99823057606779, 'GaussianNB': 0.8441807785166038, 'SVC': 0.9902503308815325, 'SGD': 0.8731391521251913, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MyDeepAutoencoder64'>11
+(Train/Test) MSE: 0.030/0.029	Accuracy: 24534.979/23494.062
+{'LogisticRegression': 0.9356416602524019, 'DecisionTree': 1.0, 'GaussianNB': 0.9038710928113606, 'SVC': 1.0, 'SGD': 0.8795621782836396, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MyDeepSparceAutoencoder64'>11
+(Train/Test) MSE: 0.015/0.016	Accuracy: 14579.908/14772.636
+{'LogisticRegression': 0.9356416602524019, 'DecisionTree': 0.9998895027624309, 'GaussianNB': 0.8449488147135424, 'SVC': 0.9902460039316034, 'SGD': 0.9044715448881979, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MyAutoencoder64'>12
+(Train/Test) MSE: 0.009/0.009	Accuracy: 10687.960/10775.550
+{'LogisticRegression': 0.9359968205116143, 'DecisionTree': 0.9987829400241777, 'GaussianNB': 0.8674407335393368, 'SVC': 1.0, 'SGD': 0.9241600236128911, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MySparceAutoencoder64'>12
+(Train/Test) MSE: 0.010/0.010	Accuracy: 11770.696/11509.624
+{'LogisticRegression': 0.9356416602524019, 'DecisionTree': 0.9983404621480714, 'GaussianNB': 0.7302689799610331, 'SVC': 0.9902483228918741, 'SGD': 0.9003724913079468, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MyDeepAutoencoder64'>12
+(Train/Test) MSE: 0.021/0.021	Accuracy: 17829.271/17372.400
+{'LogisticRegression': 0.9356416602524019, 'DecisionTree': 1.0, 'GaussianNB': 0.9026121552895369, 'SVC': 1.0, 'SGD': 0.9050321824581893, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MyDeepSparceAutoencoder64'>12
+(Train/Test) MSE: 0.021/0.021	Accuracy: 17872.738/18152.045
+{'LogisticRegression': 0.9356416602524019, 'DecisionTree': 1.0, 'GaussianNB': 0.9038800777558134, 'SVC': 0.9902436396526217, 'SGD': 0.8664382925743543, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MyAutoencoder64'>13
+(Train/Test) MSE: 0.009/0.009	Accuracy: 10653.196/10620.190
+{'LogisticRegression': 0.9350156658815901, 'DecisionTree': 0.997676255054467, 'GaussianNB': 0.8505178298254339, 'SVC': 1.0, 'SGD': 0.9243942798626554, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MySparceAutoencoder64'>13
+(Train/Test) MSE: 0.010/0.011	Accuracy: 11688.238/11670.479
+{'LogisticRegression': 0.9356416602524019, 'DecisionTree': 0.9985626794792306, 'GaussianNB': 0.7659833603783214, 'SVC': 0.9902480288152147, 'SGD': 0.9094653674180309, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MyDeepAutoencoder64'>13
+(Train/Test) MSE: 0.029/0.029	Accuracy: 23890.125/23669.736
+{'LogisticRegression': 0.9356416602524019, 'DecisionTree': 0.9998893805309734, 'GaussianNB': 0.9038713807290295, 'SVC': 1.0, 'SGD': 0.9154496690536428, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MyDeepSparceAutoencoder64'>13
+(Train/Test) MSE: 0.016/0.016	Accuracy: 15346.138/15111.060
+{'LogisticRegression': 0.9356416602524019, 'DecisionTree': 0.9998893805309734, 'GaussianNB': 0.8261715714242293, 'SVC': 0.9902469875170061, 'SGD': 0.8940741381084262, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MyAutoencoder64'>14
+(Train/Test) MSE: 0.009/0.009	Accuracy: 10755.103/10708.173
+{'LogisticRegression': 0.9359989608592658, 'DecisionTree': 0.9982299646397795, 'GaussianNB': 0.8627962767673953, 'SVC': 1.0, 'SGD': 0.8787837628759668, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MySparceAutoencoder64'>14
+(Train/Test) MSE: 0.010/0.011	Accuracy: 11550.083/11575.883
+{'LogisticRegression': 0.935516244162802, 'DecisionTree': 0.9987823280547211, 'GaussianNB': 0.7569960939172438, 'SVC': 0.9902467493000892, 'SGD': 0.817167522226401, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MyDeepAutoencoder64'>14
+(Train/Test) MSE: 0.021/0.021	Accuracy: 17698.867/17810.520
+{'LogisticRegression': 0.9356416602524019, 'DecisionTree': 1.0, 'GaussianNB': 0.9027108683691282, 'SVC': 1.0, 'SGD': 0.8800825902046631, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MyDeepSparceAutoencoder64'>14
+(Train/Test) MSE: 0.029/0.031	Accuracy: 23866.070/23914.930
+{'LogisticRegression': 0.9356416602524019, 'DecisionTree': 1.0, 'GaussianNB': 0.903879163649051, 'SVC': 0.9902473725507404, 'SGD': 0.9125010755503933, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MyAutoencoder64'>15
+(Train/Test) MSE: 0.009/0.009	Accuracy: 10853.759/10778.463
+{'LogisticRegression': 0.9352741398504136, 'DecisionTree': 0.9978978606868927, 'GaussianNB': 0.7876586212822984, 'SVC': 1.0, 'SGD': 0.8780296710557849, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MySparceAutoencoder64'>15
+(Train/Test) MSE: 0.010/0.010	Accuracy: 11422.287/11222.370
+{'LogisticRegression': 0.9356416602524019, 'DecisionTree': 0.9975657572754519, 'GaussianNB': 0.661297453463142, 'SVC': 0.9902497868190805, 'SGD': 0.8569830613702312, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MyDeepAutoencoder64'>15
+(Train/Test) MSE: 0.029/0.031	Accuracy: 24039.426/24506.869
+{'LogisticRegression': 0.9356416602524019, 'DecisionTree': 1.0, 'GaussianNB': 0.9028105749050512, 'SVC': 1.0, 'SGD': 0.8991114019356031, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MyDeepSparceAutoencoder64'>15
+(Train/Test) MSE: 0.018/0.018	Accuracy: 16458.893/16469.191
+{'LogisticRegression': 0.9356416602524019, 'DecisionTree': 1.0, 'GaussianNB': 0.7440431727317212, 'SVC': 0.9902498348199422, 'SGD': 0.8550605279160216, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MyAutoencoder64'>16
+(Train/Test) MSE: 0.009/0.009	Accuracy: 10752.287/10610.707
+{'LogisticRegression': 0.9345006188998815, 'DecisionTree': 0.9955738712784447, 'GaussianNB': 0.8231459642207973, 'SVC': 1.0, 'SGD': 0.8760187902491967, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MySparceAutoencoder64'>16
+(Train/Test) MSE: 0.010/0.010	Accuracy: 11666.098/11372.003
+{'LogisticRegression': 0.9356416602524019, 'DecisionTree': 0.9970127818910536, 'GaussianNB': 0.771680400072759, 'SVC': 0.990249183745284, 'SGD': 0.823000986283126, 'GaussianProcess': 1.0, 'XGBoost': 0}
+********************
+<class '__main__.MyCAutoencoder64'>10
+(Train/Test) MSE: 0.032/0.032	Accuracy: 118616.531/116904.719
+{'LogisticRegression': 0.9356416602524019, 'DecisionTree': 1.0, 'GaussianNB': 0.9175548323112119, 'SVC': 1.0, 'SGD': 0.8965541913145783, 'GaussianProcess': 1.0, 'XGBoost': 0}
