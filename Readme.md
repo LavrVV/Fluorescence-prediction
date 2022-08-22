@@ -1,4 +1,4 @@
-# Diploma project for CMS MSU
+# Diploma project for CMC MSU
 
 This is project to create neural network to predict brain glioma fluorescence by ```.dicom``` brain images.
 
